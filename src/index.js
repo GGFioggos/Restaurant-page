@@ -1,2 +1,3 @@
-console.log("hi");
+import {initialPageLoad} from './page-load';
 
+initialPageLoad();
