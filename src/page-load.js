@@ -2,6 +2,7 @@ export function homePageLoad() {
     /*
         HEADER
             LOGO DIV
+                ACTIONS
             DIV
             BACKGROUND IMG
         
@@ -27,6 +28,33 @@ export function homePageLoad() {
     logo.src = "../src/assets/logo.png";
 
     logodiv.appendChild(logo);
+
+    const browse = document.createElement("ul");
+    browse.className = "browse";
+    const home = document.createElement("li");
+    home.textContent = "Home";
+    home.className = "home active";
+    const menu = document.createElement("li");
+    menu.textContent = "Menu";
+    menu.className = "menu";
+    const contact = document.createElement("li");
+    contact.textContent = "Contact";
+    contact.className = "contact";
+
+    let actions = [home,menu,contact];
+    actions.forEach(action => {
+        action.addEventListener("click", () => {
+            actions.forEach(action => action.classList.remove("active"));
+            action.classList.add("active");
+        })
+    })
+
+
+    browse.appendChild(home);
+    browse.appendChild(menu);
+    browse.appendChild(contact);
+
+    logodiv.appendChild(browse);
 
     const headerbg = document.createElement("img");
     headerbg.className = "header-bg";
