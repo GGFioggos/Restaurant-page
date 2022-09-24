@@ -15,7 +15,7 @@ html,body {
 /* HEADER */
 #header .header-bg {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     object-fit:cover;
 }
 
@@ -45,8 +45,13 @@ html,body {
     padding-inline: 5px;
     font-size: 1.1rem;
     margin-top: 5px;
-    padding-block: 15px;
+    padding-block: 10px;
+    margin-block: 5px;
     cursor: pointer;
+}
+
+.browse li:hover {
+    border-bottom: 1px solid orange;
 }
 
 .active {
