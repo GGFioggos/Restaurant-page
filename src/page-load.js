@@ -1,17 +1,14 @@
-import {homePageLoad} from '../src/home';
-import { menuPageLoad } from './menu';
-
 function initialPageLoad() {
     const container = document.querySelector("#container");
 
     container.appendChild(createHeader());
-    container.appendChild(homePageLoad());
+    container.appendChild(createContent());
 }
 
 function createHeader() {
     const header = document.createElement("div");
     header.id = "header";
-    
+
 	const logodiv = document.createElement("div");
 	logodiv.className = "logo-div";
 
@@ -55,6 +52,13 @@ function createHeader() {
     header.appendChild(headerbg);
 
     return header;
+}
+
+function createContent() {
+    const content = document.createElement("div");
+	content.id = "content";
+
+    return content;
 }
 
 export {initialPageLoad, createHeader};

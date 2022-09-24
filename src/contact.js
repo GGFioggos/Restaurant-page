@@ -1,5 +1,6 @@
-export function menuPageLoad() {
+export function contactPageLoad() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
-    console.log("menu loaded");
+
+    
 }
