@@ -4,7 +4,7 @@ import { contactPageLoad } from "./contact";
 import { initialPageLoad } from "./page-load";
 
 initialPageLoad();
-homePageLoad();
+contactPageLoad();
 
 const home = document.querySelector(".home");
 const menu = document.querySelector(".menu");
