@@ -1,5 +1,5 @@
 :root {
-	--orange-background: rgba(255, 166, 0, 0.532)
+	--orange-background: rgba(255, 166, 0, 0.532);
 }
 
 ul {
@@ -14,7 +14,12 @@ body {
 	padding: 0;
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
-	background-color: rgba(224, 224, 224, 0.733);
+	background-color: rgb(255, 255, 255);
+}
+
+#container {
+	position: relative;
+	min-height: 100vh;
 }
 
 /* HEADER */
@@ -65,6 +70,10 @@ body {
 
 /* CONTENT */
 
+#content.home {
+	display: grid;
+}
+
 #content {
 	margin-top: 3vh;
 	background-color: var(--background-color);
@@ -98,13 +107,43 @@ body {
 	align-items: center;
 }
 
+/* FOOTER */
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--orange-background);
+	justify-content: center;
+	gap: 30px;
+	display: flex;
+}
+
+#footer ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	filter: grayscale(100%);
+}
+
+.social li a {
+	scale: 1.3;
+	text-decoration: none !important;
+}
+
 /* CONTACT */
+
+#content.contact {
+	display: flex;
+	flex-direction: column;
+}
 
 .restaurants-container {
 	margin-inline: 40px;
 	display: grid;
-    gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 	margin-bottom: 30px;
 }
 
@@ -126,12 +165,55 @@ body {
 .restaurant-card p {
 	margin-left: 50px;
 	font-size: 1.2rem;
-    display: list-item;
+	display: list-item;
 }
 
 .restaurant-card img {
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	height: 350px;
-    width: 400px;
+	width: 400px;
+}
+
+/* MENU */
+
+#content.menu {
+	padding-top: 30px;
+	padding-inline: 30px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-rows: 400px;
+}
+
+.menu-card {
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.menu-card p {
+	color: white;
+	font-size: 2rem;
+	font-weight: bolder;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.menu-card img {
+	background-size: cover;
+	position: relative;
+	filter: brightness(50%);
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	transition: transform 0.5s ease-in-out 0s;
+}
+
+.menu-card:hover img {
+	transform: scale(1.1, 1.1);
 }
