@@ -2,11 +2,11 @@ export function menuPageLoad() {
     const menuItems = {
         item1: {
             name: "BAO BUN WITH PEKING DUCK",
-            image: "./assets/menu-images/food1.jpg"
+            image: "assets/menu-images/food1.jpg"
         },
         item2: {
             name: "POKE BOWL",
-            image: "../assets/menu-images/food2.jpg"
+            image: "assets/menu-images/food2.jpg"
         },
         item3: {
             name: "INSIDE OUT COMBO",
