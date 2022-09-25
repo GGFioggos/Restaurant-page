@@ -14,7 +14,7 @@ function createHeader() {
 	logodiv.className = "logo-div";
 
 	const logo = document.createElement("img");
-	logo.src = "logo.png";
+	logo.src = "assets/logo.png";
 
 	logodiv.appendChild(logo);
 
@@ -46,7 +46,7 @@ function createHeader() {
 
 	const headerbg = document.createElement("img");
 	headerbg.className = "header-bg";
-	headerbg.src = "main-photo.jpg";
+	headerbg.src = "assets/main-photo.jpg";
 
     const test = document.createElement("div");
     header.appendChild(logodiv);

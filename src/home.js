@@ -9,7 +9,7 @@ export function homePageLoad() {
 
 	const restaurantImg = document.createElement("img");
 	restaurantImg.classList.add("restuarant-Image");
-	restaurantImg.src = "restaurant-photo.jpg";
+	restaurantImg.src = "assets/restaurant-photo.jpg";
 
 	const restaurantdescription = document.createElement("p");
 	restaurantdescription.classList.add("restaurant-description");
@@ -25,7 +25,7 @@ export function homePageLoad() {
 
 	const chefImage = document.createElement("img");
 	chefImage.classList.add("chef-image");
-	chefImage.src = "chef-image.jpg";
+	chefImage.src = "assets/chef-image.jpg";
 
 	const creationdescription = document.createElement("p");
 	creationdescription.className = "creation-description";
