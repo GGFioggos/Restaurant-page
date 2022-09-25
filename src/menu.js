@@ -31,13 +31,28 @@ export function menuPageLoad() {
         item8: {
             name: "CHICKEN WINGS",
             image: "../src/assets/menu-images/food8.jpg"
-        },
+        }
+    };
 
-
-    }
-    
     const content = document.querySelector("#content");
     content.innerHTML = "";
+    content.className = "menu"
+
     
+    for (let item in menuItems){
+        const card = document.createElement("div");
+        card.className = "menu-card";
+    
+        const itemName = document.createElement("p");
+        const itemImg = document.createElement("img");
+    
+        itemName.textContent = menuItems[item]["name"];
+        itemImg.src = menuItems[item]["image"];
+
+        card.appendChild(itemName);
+        card.appendChild(itemImg);
+        
+        content.appendChild(card);
+    }
 
 }
