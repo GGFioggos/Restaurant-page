@@ -30,9 +30,7 @@ export function contactPageLoad() {
 
     const content = document.querySelector("#content");
     content.innerHTML = "";
-
-    content.style.display = "flex";
-    content.style.flexDirection = "column";
+    content.className = "contact"
 
     const headertext = document.createElement("h1");
     headertext.textContent = "Contact Us!";
