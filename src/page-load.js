@@ -14,7 +14,7 @@ function createHeader() {
 	logodiv.className = "logo-div";
 
 	const logo = document.createElement("img");
-	logo.src = "./assets/logo.png";
+	logo.src = "logo.png";
 
 	logodiv.appendChild(logo);
 
@@ -46,7 +46,7 @@ function createHeader() {
 
 	const headerbg = document.createElement("img");
 	headerbg.className = "header-bg";
-	headerbg.src = "./assets/main-photo.jpg";
+	headerbg.src = "main-photo.jpg";
 
     const test = document.createElement("div");
     header.appendChild(logodiv);
@@ -82,13 +82,6 @@ function createFooter() {
 	const facebook = document.createElement("li");
 	const instagram = document.createElement("li");
 	const tripadvisor = document.createElement("li");
-
-	/* const facebookImg = document.createElement("img");
-	facebookImg.src = "../src/assets/icons/facebook.png"
-	const instagramImg = document.createElement("img");
-	instagramImg.src = "../src/assets/icons/instagram.png"
-	const tripadvisorImg = document.createElement("img");
-	tripadvisorImg.src = "../src/assets/icons/tripadvisor.png"; */
 
 	const facebookLink = document.createElement("a");
 	const instagramLink = document.createElement("a");
