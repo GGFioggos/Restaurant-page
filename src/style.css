@@ -193,6 +193,8 @@ body {
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.513);
+
 }
 
 .menu-card p {
