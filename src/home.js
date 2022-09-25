@@ -2,7 +2,7 @@ export function homePageLoad() {
 	// CONTENT LEFT
     const content = document.querySelector("#content");
     content.innerHTML = "";
-	content.style.display = "grid";
+	content.className = "home";
 
 	const leftcard = document.createElement("div");
 	leftcard.className = "card";
